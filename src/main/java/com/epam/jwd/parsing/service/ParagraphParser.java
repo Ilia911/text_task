@@ -12,7 +12,7 @@ public class ParagraphParser implements Parser {
 
     private static final Parser INSTANCE = new ParagraphParser();
     private Parser nextParser = SentenceParser.getINSTANCE();
-    private static final Pattern SENTENCE_PATTERN = Pattern.compile("^[A-Z].*[.{3}!?]");
+    private static final Pattern SENTENCE_PATTERN = Pattern.compile("[A-Z].+?[.{3}!?]");
 
 
     private ParagraphParser() {
@@ -37,14 +37,14 @@ public class ParagraphParser implements Parser {
     public Component handleRequest(String paragraph) {
         Component paragraphComponent = new Paragraph();
         List<String> sentenceList = parseParagraph(paragraph);
-
-
+        int i = 0;
         for (String sentence : sentenceList) {
             paragraphComponent.add(nextParser.handleRequest(sentence));
         }
 
         return paragraphComponent;
     }
+
     private List<String> parseParagraph(String paragraph) {
         List<String> sentenceList = new ArrayList<>();
         final Matcher matcher = SENTENCE_PATTERN.matcher(paragraph);

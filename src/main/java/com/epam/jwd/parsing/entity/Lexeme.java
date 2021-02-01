@@ -50,11 +50,11 @@ public class Lexeme implements Component {
 
         Lexeme lexeme = (Lexeme) o;
 
-        return components != null ? components.equals(lexeme.components) : lexeme.components == null;
+        return components.equals(lexeme.components);
     }
 
     @Override
     public int hashCode() {
-        return components != null ? components.hashCode() : 0;
+        return components.hashCode();
     }
 }

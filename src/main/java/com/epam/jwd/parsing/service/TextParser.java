@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 public class TextParser implements Parser {
     private static final Parser INSTANCE = new TextParser();
     private Parser nextParser = ParagraphParser.getINSTANCE();
-    private static final Pattern PARAGRAPH_PATTERN = Pattern.compile("^[ {4}\\t].*\\n");
+    private static final Pattern PARAGRAPH_PATTERN = Pattern.compile("^[ {4}\\t].*?");
     private TextParser() {}
 
     public static Parser getINSTANCE() {

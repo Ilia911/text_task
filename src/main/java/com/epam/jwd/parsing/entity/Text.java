@@ -1,6 +1,7 @@
 package com.epam.jwd.parsing.entity;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Text implements Component {
@@ -30,6 +31,7 @@ public class Text implements Component {
     @Override
     public void sort() {
 
+
     }
 
     @Override
@@ -52,11 +54,11 @@ public class Text implements Component {
 
         Text text = (Text) o;
 
-        return components != null ? components.equals(text.components) : text.components == null;
+        return components.equals(text.components);
     }
 
     @Override
     public int hashCode() {
-        return components != null ? components.hashCode() : 0;
+        return components.hashCode();
     }
 }

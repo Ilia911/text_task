@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Paragraph implements Component {
-    private List<Component> sentences = new ArrayList<>();
+    private final List<Component> sentences = new ArrayList<>();
 
     @Override
     public void add(Component element) {
@@ -56,11 +56,12 @@ public class Paragraph implements Component {
 
         Paragraph paragraph = (Paragraph) o;
 
-        return sentences != null ? sentences.equals(paragraph.sentences) : paragraph.sentences == null;
+        return sentences.equals(paragraph.sentences);
     }
 
     @Override
     public int hashCode() {
-        return sentences != null ? sentences.hashCode() : 0;
+        return sentences.hashCode();
     }
+
 }

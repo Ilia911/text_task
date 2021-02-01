@@ -51,11 +51,11 @@ public class Sentence implements Component {
 
         Sentence sentence = (Sentence) o;
 
-        return lexemes != null ? lexemes.equals(sentence.lexemes) : sentence.lexemes == null;
+        return lexemes.equals(sentence.lexemes);
     }
 
     @Override
     public int hashCode() {
-        return lexemes != null ? lexemes.hashCode() : 0;
+        return lexemes.hashCode();
     }
 }
