@@ -1,5 +1,10 @@
 package com.epam.jwd.parsing.service;
 
-public interface Handler {
-    void handleRequest();
+import com.epam.jwd.parsing.entity.Component;
+
+import java.util.List;
+
+public interface Parser {
+    Component handleRequest(String string);
+
 }
