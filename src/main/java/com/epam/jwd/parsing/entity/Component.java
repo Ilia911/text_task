@@ -6,6 +6,5 @@ public interface Component {
     void add(Component element);
     List<Component> getComponents();
     String getString();
-    void sort();
     void remove(Component element);
 }

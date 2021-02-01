@@ -19,7 +19,7 @@ public class LexemeComparator implements Comparator<Component> {
         int quantityOfRegexInComponentO2 = calculateNumberOfRegexInWord(o2);
 
         if (quantityOfRegexInComponentO1 != quantityOfRegexInComponentO2) {
-            return - quantityOfRegexInComponentO1 + quantityOfRegexInComponentO2;
+            return quantityOfRegexInComponentO2 - quantityOfRegexInComponentO1;
         }
 
         return o1.getString().compareToIgnoreCase(o2.getString());

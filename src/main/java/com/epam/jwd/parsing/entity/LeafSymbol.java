@@ -5,9 +5,11 @@ import java.util.List;
 
 public class LeafSymbol implements Component {
     private String symbol;
+
     public LeafSymbol(String symbol) {
         this.symbol = symbol;
     }
+
     @Override
     public void add(Component element) {
 
@@ -21,11 +23,6 @@ public class LeafSymbol implements Component {
     @Override
     public String getString() {
         return symbol;
-    }
-
-    @Override
-    public void sort() {
-
     }
 
     @Override

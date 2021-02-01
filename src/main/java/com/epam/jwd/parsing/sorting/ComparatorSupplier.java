@@ -1,7 +1,5 @@
 package com.epam.jwd.parsing.sorting;
 
-import java.util.Comparator;
-
 public class ComparatorSupplier {
 
     private static final ParagraphComparator PARAGRAPH_COMPARATOR = new ParagraphComparator();

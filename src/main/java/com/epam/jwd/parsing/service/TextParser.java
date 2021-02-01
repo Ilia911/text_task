@@ -12,7 +12,9 @@ public class TextParser implements Parser {
     private static final Parser INSTANCE = new TextParser();
     private Parser nextParser = ParagraphParser.getINSTANCE();
     private static final Pattern PARAGRAPH_PATTERN = Pattern.compile("^[ {4}\\t].*?");
-    private TextParser() {}
+
+    private TextParser() {
+    }
 
     public static Parser getINSTANCE() {
         return INSTANCE;
@@ -42,7 +44,7 @@ public class TextParser implements Parser {
         List<String> sentenceList = new ArrayList<>();
         final Matcher matcher = PARAGRAPH_PATTERN.matcher(paragraph);
 
-        while(matcher.find()) {
+        while (matcher.find()) {
             sentenceList.add(matcher.group());
         }
         return sentenceList;

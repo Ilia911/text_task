@@ -1,7 +1,6 @@
 package com.epam.jwd.parsing.entity;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Text implements Component {
@@ -26,12 +25,6 @@ public class Text implements Component {
             stringBuilder.append(component.getString());
         }
         return stringBuilder.toString();
-    }
-
-    @Override
-    public void sort() {
-
-
     }
 
     @Override

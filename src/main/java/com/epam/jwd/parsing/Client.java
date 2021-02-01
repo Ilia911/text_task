@@ -10,14 +10,12 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
-import java.util.Comparator;
 
 public class Client {
     private String filePath;
     private Component component;
     private static final Logger LOGGER = LogManager.getLogger(Client.class);
     private static final Client INSTANCE = new Client();
-
 
     {
         filePath = "src/main/resources/input/text.txt";

@@ -2,7 +2,6 @@ package com.epam.jwd.parsing.service;
 
 import com.epam.jwd.parsing.entity.Component;
 import com.epam.jwd.parsing.entity.Sentence;
-// This class parses paragraphs into Sentence component
 
 public class SentenceParser implements Parser {
     private static final SentenceParser INSTANCE = new SentenceParser();

@@ -28,11 +28,6 @@ public class Sentence implements Component {
     }
 
     @Override
-    public void sort() {
-
-    }
-
-    @Override
     public void remove(Component element) {
 
     }

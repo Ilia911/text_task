@@ -26,12 +26,9 @@ public class ParagraphParser implements Parser {
         this.nextParser = nextParser;
     }
 
-
     public static Parser getINSTANCE() {
         return INSTANCE;
     }
-
-
 
     @Override
     public Component handleRequest(String paragraph) {
@@ -41,7 +38,6 @@ public class ParagraphParser implements Parser {
         for (String sentence : sentenceList) {
             paragraphComponent.add(nextParser.handleRequest(sentence));
         }
-
         return paragraphComponent;
     }
 
@@ -49,7 +45,7 @@ public class ParagraphParser implements Parser {
         List<String> sentenceList = new ArrayList<>();
         final Matcher matcher = SENTENCE_PATTERN.matcher(paragraph);
 
-        while(matcher.find()) {
+        while (matcher.find()) {
             sentenceList.add(matcher.group());
         }
         return sentenceList;

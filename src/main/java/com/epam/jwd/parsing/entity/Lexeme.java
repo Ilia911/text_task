@@ -27,11 +27,6 @@ public class Lexeme implements Component {
     }
 
     @Override
-    public void sort() {
-
-    }
-
-    @Override
     public void remove(Component element) {
 
     }

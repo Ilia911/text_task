@@ -3,7 +3,6 @@ package com.epam.jwd.parsing.service;
 import com.epam.jwd.parsing.entity.Component;
 import com.epam.jwd.parsing.entity.LeafSymbol;
 import com.epam.jwd.parsing.entity.Lexeme;
-// This class parses sentences into symbols
 
 public class LexemeParser implements Parser {
     private static final LexemeParser LEXEME_PARSER = new LexemeParser();
