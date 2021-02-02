@@ -1,4 +1,4 @@
-package com.epam.jwd.parsing.sorting;
+package com.epam.jwd.parsing.service.sorting;
 
 import com.epam.jwd.parsing.entity.Component;
 

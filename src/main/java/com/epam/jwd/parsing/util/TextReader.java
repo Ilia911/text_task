@@ -13,7 +13,7 @@ public class TextReader {
 
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             while ((temp = reader.readLine()) != null) {
-                    text.append(temp);
+                text.append(temp);
 
             }
         }

@@ -1,4 +1,4 @@
-package com.epam.jwd.parsing.service;
+package com.epam.jwd.parsing.service.parser;
 
 import com.epam.jwd.parsing.entity.Component;
 import com.epam.jwd.parsing.entity.Sentence;

@@ -10,7 +10,6 @@ public class Text implements Component {
     @Override
     public void add(Component element) {
         components.add(element);
-
     }
 
     @Override
@@ -30,7 +29,6 @@ public class Text implements Component {
     @Override
     public void remove(Component element) {
         components.remove(element);
-
     }
 
     @Override

@@ -1,4 +1,4 @@
-package com.epam.jwd.parsing.sorting;
+package com.epam.jwd.parsing.service.sorting;
 
 public class ComparatorSupplier {
 
