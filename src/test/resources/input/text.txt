@@ -1,3 +1,3 @@
-    Hello my friends!
-    Today is a nice day! Do you think so?
-    I think so...
+    Hello my friends! Ab aab baaa caa Abca.
+    Today is a nice day! Do you think so? A ba ab faa caa aca.
+    I want to calculate this expression: 2+5-(3+1)*2+4/2 for you...
